@@ -1,0 +1,126 @@
+@font-face {
+	font-family: Gilroy-bold;
+	src: url(../assets/fonts/Gilroy-bold.ttf);
+}
+@font-face {
+	font-family: Gilroy-medium;
+	src: url(../assets/fonts/Gilroy-medium.ttf);
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Gilroy-bold';
+}
+
+.header {
+	height: 87px;
+	background-color: white;
+}
+
+.wrap{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 950px;
+}
+.header__nav{
+	display: flex;
+    height: 87px;
+    align-items: center;
+    justify-content: space-between;
+	border-bottom:  1px solid #828282;
+}
+.header__nav a{
+	font-family: 'Gilroy-bold';
+	font-size: 18px;
+	line-height: 22px;
+	text-decoration: none;
+	color: #070707
+	}
+
+.container {
+	display: block;
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+    height: auto;
+	}
+
+.preview__desc{
+	display: flex;
+    justify-content: space-between;
+	align-items: flex-end;
+	margin: 40px 0 50px;
+}
+
+.desc__name{
+	display: block;
+	margin: 0;
+	width: 123px;
+	text-align: left;
+	font-size: 47px;
+	line-height: 59px;
+}
+
+.desc__job{
+	display: block;
+	margin-bottom: 10px;
+	margin-right: 50px;
+	text-align: left;
+	font-family: 'Gilroy-medium';
+	font-size: 18px;
+	line-height: 22px;
+}
+.desc__lang{
+	display: block;
+	margin-bottom: 10px;
+}
+.preview-pic{
+	display: block;
+	background-image: url(../assets/images/photo.jpg);
+	height: 550px;
+	object-fit: cover;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.about-me{
+	background-color: #F6F6F6;
+	height: 506px;
+	margin-top: 104px;
+}
+.about-me__sign {
+	font-family: 'Gilroy-Bold';
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	margin: 0;
+	padding-top: 120px;
+}
+
+.about-me__wrapper{
+	display: flex;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+	margin-left: 230px;
+	margin-top: 18px;
+    height: 218px;
+    width: 485px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+	
+.about-me__info1, .about-me__info2, .about-me__info3{
+	display: block;
+}
