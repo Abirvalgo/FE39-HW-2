@@ -44,7 +44,7 @@ body {
 	}
 
 .header__nav a:hover{
-	color: #aeb84e	
+	color: #070707	
 }
 
 
@@ -60,7 +60,7 @@ body {
 .preview__desc{
 	display: flex;
     justify-content: space-between;
-	align-items: baseline;
+	align-items: flex-end;
 	margin: 40px 0 50px;
 }
 
@@ -87,18 +87,23 @@ body {
 	text-transform: uppercase;
 	transform: rotate(-90deg);
 	text-decoration: none;
+	margin-bottom: 40px;
 }
 .lang__select a{
-	color: #000000;
+	color: #4e4e4e;
 	}
 
 .lang__select a:hover{
-color: #aeb84e;
+color: #070707;
 }
 
 
 .preview-pic{
 	display: block;
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
 	background-image: url(../assets/images/photo.jpg);
 	height: 550px;
 	object-fit: cover;
@@ -155,6 +160,7 @@ section{
 .skills__programs{
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 110px;
 }
 .skills>p {
 	margin: 0;
@@ -181,12 +187,16 @@ section{
 }
 
 .portfolio{
-	background-color: #F6F6F6; /* получается серый цвет по размеру контейнера (не видно за рисунками
-	реклымы. я хз как правильно исправить. сильно дофига времени уходит (а решение по любому банальное
-	будет какое-то)*/
+	background-color: #F6F6F6;
 	box-sizing: content-box;
+
 }
-.portfolio>h2 {
+.portfolio>.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.portfolio h2 {
 	padding-bottom: 47px;
 }
 
@@ -197,21 +207,8 @@ section{
 	margin-right: auto;
 	margin-bottom: 45px;
 }
-.portfolio>a {
-	-webkit-box-align:center;
-    -webkit-box-pack:center;
-    display:-webkit-box;
-	
-	/*
-	так и не понял. не равняет ссылку по центру, либо делает ее на всю строку
-	в итоге нашел код и скопировал (webkit), но это только поровняло, а так на всю строку
-	блок выходит
-	display: block;  
-	margin-left: auto;
-	margin-right: auto;*/
-	margin-bottom: 99px;     /*плюс после последней ссылки при добавлении margin 99
-	не покрывается серым фоном участок (только если padding, но тогда ссылка растягивается по вертикали
-	еще. пробовал box-sizing для секции, но тоже чето не то)*/
+.portfolio a {
+	margin-bottom: 99px;
 	font-family: Gilroy-Medium;
 	font-size: 18px;
 	line-height: 22px;
@@ -269,6 +266,4 @@ section{
 	margin-top: 45px;
 	margin-bottom: 120px;
 }
-
-
 
