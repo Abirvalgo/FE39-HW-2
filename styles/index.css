@@ -7,10 +7,6 @@
 	src: url(../assets/fonts/Gilroy-medium.ttf);
 }
 
-
-/* Media 1*/
-
-
 @media screen and (max-width: 730px){
 .header, .lang__select {
 	display: none;
@@ -40,10 +36,6 @@ body .about-me__wrapper{
 }
 }
 
-
-/*Media 2 */
-
-
 @media screen and (max-width: 540px){
 .send-msg__button{
 	width: 60%;
@@ -51,7 +43,11 @@ body .about-me__wrapper{
 }
 }
 
-
+@media (min-width:200px) and (max-width: 730px) {
+	body .portfolio a{
+	  font-size: calc(10px + (18 - 10) * ( (100vw - 200px) / ( 730 - 200) ));
+	}
+}
 
 /*Start body */
 
@@ -261,6 +257,48 @@ section:not(:nth-child(1),:nth-child(2)){
 	text-align: center;
 }
 
+.rating-area {
+	overflow: hidden;
+	/* width: 265px; */
+	width: 150px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float:right;
+	width: 30px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 30px;
+	color: lightgrey;
+	text-shadow: 1px 1px #E5E5E5;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: #070707;
+	text-shadow: 1px 1px rgb(34, 34, 33);
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: #070707;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: #070707;
+	text-shadow: 1px 1px rgb(45, 45, 44);
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+
 
 
 /*Section portfolio*/
@@ -287,6 +325,7 @@ section:not(:nth-child(1),:nth-child(2)){
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 45px;
+	font-size: 2px;
 }
 .portfolio a {
 	margin-bottom: 99px;
@@ -294,10 +333,6 @@ section:not(:nth-child(1),:nth-child(2)){
 	font-size: 18px;
 	text-decoration: underline;
 	color: #000000;
-}
-.portfolio>a:hover {
-	color: #aeb84e;
-	text-shadow: #000000;
 }
 
 
