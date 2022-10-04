@@ -7,6 +7,56 @@
 	src: url(../assets/fonts/Gilroy-medium.ttf);
 }
 
+
+/* Media 1*/
+
+
+@media screen and (max-width: 730px){
+.header, .lang__select {
+	display: none;
+}
+body .container{
+	margin-left: 29px;
+	margin-right: 29px;
+}
+section.preview-pic{
+	background-image: url(../assets/images/photo-mobile.jpg);
+	background-size: cover;
+	width: 90%;
+	background-position: top;
+}
+body .preview__desc{
+	align-items: flex-start;
+	flex-direction: column;
+	margin: 0;
+}
+
+body .about-me__wrapper{
+	width: 75%;
+}
+.programs__info{
+	margin: 3%;
+	
+}
+}
+
+
+/*Media 2 */
+
+
+@media screen and (max-width: 540px){
+.send-msg__button{
+	width: 60%;
+	text-align: center;
+}
+}
+
+
+
+/*Start body */
+
+
+
 *{
 	box-sizing: content-box;
 	text-decoration: none;
@@ -16,6 +66,19 @@ body {
 	padding: 0;
 	font-family: 'Gilroy-bold';
 }
+.container {
+	display: block;
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	height: auto;
+}
+
+
+
+/*Header*/
+
 
 .header {
 	height: 87px;
@@ -38,7 +101,6 @@ body {
 .header__nav a{
 	font-family: 'Gilroy-bold';
 	font-size: 18px;
-	line-height: 22px;
 	text-decoration: none;
 	color: #4e4e4e
 	}
@@ -48,18 +110,14 @@ body {
 }
 
 
-.container {
-	display: block;
-	max-width: 950px;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
-    height: auto;
-	}
+
+	/*Section Preview*/
+
+
 
 .preview__desc{
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 	align-items: flex-end;
 	margin: 40px 0 50px;
 }
@@ -70,17 +128,17 @@ body {
 	width: 123px;
 	text-align: left;
 	font-size: 47px;
-	line-height: 59px;
+	
 }
 
 .preview__desc li:nth-child(2)/*.desc__job*/{
 	display: block;
+	margin: 0;
 	margin-bottom: 10px;
-	margin-right: 50px;
+	width: 170px;
 	text-align: left;
 	font-family: 'Gilroy-medium';
 	font-size: 18px;
-	line-height: 22px;
 }
 .preview__desc li:nth-child(3)/*desc__lang*/{
 	font-size: 18px;
@@ -101,6 +159,7 @@ color: #070707;
 .preview-pic{
 	display: block;
 	max-width: 950px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
@@ -108,8 +167,8 @@ color: #070707;
 	height: 550px;
 	object-fit: cover;
 	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+	background-size: cover;
+	background-position: center;
 }
 
 ul {
@@ -117,10 +176,15 @@ ul {
 	list-style-type: none;
 }
 
+
+
+/* Section About me */
+
+
+
 .about-me{
 	background-color: #F6F6F6;
-	max-width: 100% !important; /* тоже не работает important. выходило только если убирать container
-	размер и прописывать в каждую секцию*/
+	max-width: 100% !important;
 	margin-top: 104px;
 	padding: 120px 0 107px;
 }
@@ -128,7 +192,6 @@ ul {
 h2 {
 	font-family: 'Gilroy-Bold';
 	font-size: 34px;
-	line-height: 42px;
 	text-align: center;
 	margin: 0;
 	
@@ -136,40 +199,49 @@ h2 {
 
 .about-me__wrapper{
 	display: flex;
-    font-family: 'Gilroy-Medium';
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-	margin-left: 230px;
+	font-family: 'Gilroy-Medium';
+	font-size: 18px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 18px 0 18px;
-    height: 218px;
-    width: 485px;
-    flex-direction: column;
-    justify-content: space-around;
+	height: 30%;
+	width: 50%;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .about-me__info1, .about-me__info2, .about-me__info3{
 	display: block;
+	
+	
 }
 
-section{
+section:not(:nth-child(1),:nth-child(2)){
 	padding-top: 110px;
 }
 
 
+
+/* Section Skills*/
+
+
+
 .skills__programs{
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	padding-bottom: 110px;
 }
-.skills>p {
+
+.work-programs{
 	margin: 0;
 	display: block;
 	text-align: center;
 	padding: 70px 0 80px;
 	font-family: Gilroy-Medium;
+	color: #070707;
 	font-size: 18px;
-	line-height: 22px;
 	letter-spacing: 0em;
 }
 
@@ -179,12 +251,21 @@ section{
 	margin-right: auto;
 }
 .row2 {
+	margin: 0;
+	padding: 0;
 	font-family: Gilroy-Bold;
 	font-size: 14px;
-	line-height: 17px;
 	letter-spacing: 0em;
+	padding-top: 23px;
+	padding-bottom: 40px;
 	text-align: center;
 }
+
+
+
+/*Section portfolio*/
+
+
 
 .portfolio{
 	background-color: #F6F6F6;
@@ -211,7 +292,6 @@ section{
 	margin-bottom: 99px;
 	font-family: Gilroy-Medium;
 	font-size: 18px;
-	line-height: 22px;
 	text-decoration: underline;
 	color: #000000;
 }
@@ -219,6 +299,12 @@ section{
 	color: #aeb84e;
 	text-shadow: #000000;
 }
+
+
+
+/* Section Contacts*/
+
+
 
 .contacts__wrapper {
 	display: flex;
@@ -229,7 +315,6 @@ section{
 .contacts__wrapper>p{
 	font-family: Gilroy-Medium;
 	font-size: 18px;
-	line-height: 22px;
 	letter-spacing: 0em;
 	text-align: center;
 
@@ -237,13 +322,13 @@ section{
 
 .send-msg__button {
 	background: #000000;
-    padding: 13px 30px;
-    border-radius: 100px;
-    text-decoration: none;
+	padding: 13px 30px;
+	border-radius: 100px;
+	text-decoration: none;
 }
 .send-msg__button>span {
 	box-sizing: content-box;
-    text-decoration: none;
+	text-decoration: none;
 	color: #ffffff;
 }
 
@@ -260,7 +345,6 @@ section{
 .contacts>p {
 	font-family: Gilroy-Medium;
 	font-size: 14px;
-	line-height: 17px;
 	letter-spacing: 0em;
 	text-align: center;
 	margin-top: 45px;
