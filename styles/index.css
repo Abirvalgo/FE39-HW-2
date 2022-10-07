@@ -7,18 +7,22 @@
 	src: url(../assets/fonts/Gilroy-medium.ttf);
 }
 
-@media screen and (max-width: 730px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
+	body .container{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 768px){
 .header, .lang__select {
 	display: none;
 }
 body .container{
-	margin-left: 29px;
-	margin-right: 29px;
+	width: 90%
 }
-section.preview-pic{
+body .preview-pic{
 	background-image: url(../assets/images/photo-mobile.jpg);
 	background-size: cover;
-	width: 90%;
 	background-position: top;
 }
 body .preview__desc{
@@ -30,17 +34,27 @@ body .preview__desc{
 body .about-me__wrapper{
 	width: 75%;
 }
-.programs__info{
-	margin: 3%;
+
+}
+@media screen and (max-width: 725px) and (min-width: 499px) {
+	body .programs__info{
+		margin: 6%;
+		
+	}
 	
 }
-}
-
 @media screen and (max-width: 540px){
 .send-msg__button{
 	width: 60%;
 	text-align: center;
 }
+body .row1{
+	padding-top: 40px;
+}
+body .row2{
+	padding-bottom: 5px;
+}
+
 }
 
 @media (min-width:200px) and (max-width: 730px) {
