@@ -11,14 +11,16 @@
 
 <body>
 	<header class="header">
-		<div class="wrap">
-			<nav class="header__nav">
-				<a href="#">Home</a>
-				<a href="#">About me</a>
-				<a href="#">Skills</a>
-				<a href="#">Portfolio</a>
-				<a href="#">Contacts</a>
-			</nav>
+		<div class="container">
+			<div class="wrap">
+				<nav class="header__nav">
+					<a href="#">Home</a>
+					<a href="#">About me</a>
+					<a href="#">Skills</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Contacts</a>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<main class="main-content">
@@ -26,24 +28,26 @@
 			<div class="container">
 				<ul class="preview__desc">
 					<li>Daniil Nilov</li>
-					<li>Frontend developer <br> 29 years old, Novopolotsk</li>
+					<li>Frontend developer 29 years old, Minsk</li>
 					<li class="lang__select">
 						<a href="#">Ru</a>
 						<span> | </span>
 						<a href="#">Eng</a>
 					</li>
 				</ul>
+				<div class="preview-pic">
+				</div>
 			</div>
+
 		</section>
-		<section class="preview-pic">
-		</section>
+
 
 		<section class="about-me">
 			<div class="container">
 				<h2 class="about-me__sign">About me</h2>
 				<div class="about-me__wrapper">
-					<p class="about-me__info1">Hi, I'm Daniil – Frontend developer from Novopolotsk.
-						<br>I'm interested in tinkering websites and everything connected with it.
+					<p class="about-me__info1">Hi, I'm Daniil – Frontend developer from Minsk.
+						I'm interested in tinkering websites and everything connected with it.
 					</p>
 					<p class="about-me__info2">I'm studying at courses "Frontend developer" in TeachMeSkills.</p>
 					<p class="about-me__info3">Ready to implement excellent projects
@@ -55,40 +59,83 @@
 		<section class="skills">
 			<div class="container">
 				<h2>Skills</h2>
-				<p>I work in such programs as</p>
+				<p class="work-programs">I work in such programs as</p>
 				<div class="skills__programs">
 					<div class="programs__info">
-						<img class="row1" src="./assets/images/ps.jpg">
+						<img class="row1" src="./assets/images/ps.jpg" alt="Adobe Photoshop">
 						<p class="row2">Adobe Photoshop</p>
-						<img class="row3" src="./assets/images/4stars.png"></img>
+						<div class="rating-area">
+							<input type="radio" id="star-5.1" name="rating1" value="5">
+							<label for="star-5.1" title="Оценка «5»"></label>
+							<input type="radio" id="star-4.1" name="rating1" value="4">
+							<label for="star-4.1" title="Оценка «4»"></label>
+							<input type="radio" id="star-3.1" name="rating1" value="3">
+							<label for="star-3.1" title="Оценка «3»"></label>
+							<input type="radio" id="star-2.1" name="rating1" value="2">
+							<label for="star-2.1" title="Оценка «2»"></label>
+							<input type="radio" id="star-1.1" name="rating1" value="1">
+							<label for="star-1.1" title="Оценка «1»"></label>
+						</div>
 					</div>
 					<div class="programs__info">
-						<img class="row1" src="./assets/images/ai.jpg">
+						<img class="row1" src="./assets/images/ai.jpg" alt="Adobe Illustrator">
 						<p class="row2">Adobe Illustrator</p>
-						<img class="row3" src="./assets/images/3stars.png"></img>
+						<div class="rating-area">
+							<input type="radio" id="star-5.2" name="rating2" value="5">
+							<label for="star-5.2" title="Оценка «5»"></label>
+							<input type="radio" id="star-4.2" name="rating2" value="4">
+							<label for="star-4.2" title="Оценка «4»"></label>
+							<input type="radio" id="star-3.2" name="rating2" value="3">
+							<label for="star-3.2" title="Оценка «3»"></label>
+							<input type="radio" id="star-2.2" name="rating2" value="2">
+							<label for="star-2.2" title="Оценка «2»"></label>
+							<input type="radio" id="star-1.2" name="rating2" value="1">
+							<label for="star-1.2" title="Оценка «1»"></label>
+						</div>
 					</div>
 					<div class="programs__info">
-						<img class="row1" src="./assets/images/ae.jpg">
+						<img class="row1" src="./assets/images/ae.jpg" alt="Adobe After Effects">
 						<p class="row2">Adobe After Effects</p>
-						<img class="row3" src="./assets/images/4stars.png"></img>
+						<div class="rating-area">
+							<input type="radio" id="star-5.3" name="rating3" value="5">
+							<label for="star-5.3" title="Оценка «5»"></label>
+							<input type="radio" id="star-4.3" name="rating3" value="4">
+							<label for="star-4.3" title="Оценка «4»"></label>
+							<input type="radio" id="star-3.3" name="rating3" value="3">
+							<label for="star-3.3" title="Оценка «3»"></label>
+							<input type="radio" id="star-2.3" name="rating3" value="2">
+							<label for="star-2.3" title="Оценка «2»"></label>
+							<input type="radio" id="star-1.3" name="rating3" value="1">
+							<label for="star-1.3" title="Оценка «1»"></label>
+						</div>
 					</div>
 					<div class="programs__info">
-						<img class="row1" src="./assets/images/figma.png">
+						<img class="row1" src="./assets/images/figma.png" alt="Figma">
 						<p class="row2">Figma</p>
-						<img class="row3" src="./assets/images/4stars.png"></img>
+						<div class="rating-area">
+							<input type="radio" id="star-5.4" name="rating4" value="5">
+							<label for="star-5.4" title="Оценка «5»"></label>
+							<input type="radio" id="star-4.4" name="rating4" value="4">
+							<label for="star-4.4" title="Оценка «4»"></label>
+							<input type="radio" id="star-3.4" name="rating4" value="3">
+							<label for="star-3.4" title="Оценка «3»"></label>
+							<input type="radio" id="star-2.4" name="rating4" value="2">
+							<label for="star-2.4" title="Оценка «2»"></label>
+							<input type="radio" id="star-1.4" name="rating4" value="1">
+							<label for="star-1.4" title="Оценка «1»"></label>
+						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 
 		<section class="portfolio">
 			<div class="container">
 				<h2>Portfolio</h2>
-				<img class="main__ads" src="./assets/images/portfolio.jpg">
+				<img class="main__ads" src="./assets/images/portfolio.jpg" alt="Fashion store">
 				<a href="#">Online fashion store - Homepage</a>
-				<img class="main__ads" src="./assets/images/reebok.jpg">
+				<img class="main__ads" src="./assets/images/reebok.jpg" alt="Reebok Store">
 				<a href="#">Reebok Store - Concept</a>
-				<img class="main__ads" src="./assets/images/braun.jpg">
+				<img class="main__ads" src="./assets/images/braun.jpg" alt="Braun landing page">
 				<a href="#">Braun Landing Page - Concept</a>
 			</div>
 		</section>
@@ -101,8 +148,10 @@
 						message</span></a>
 			</div>
 			<div class="contacts-icons__wrapper">
-				<a href="https://www.linkedin.com/in/abirvalgo/"><img src="./assets/images/linkedin.png"></a>
-				<a href="https://www.instagram.com/abirvalgo/"><img src="./assets/images/instagram.png"></a>
+				<a href="https://www.linkedin.com/in/abirvalgo/"><img src="./assets/images/linkedin.png"
+						alt="linkedin"></a>
+				<a href="https://www.instagram.com/abirvalgo/"><img src="./assets/images/instagram.png"
+						alt="instagram"></a>
 			</div>
 			<p> Like me on LinkedIn, Instagram</p>
 
