@@ -6,19 +6,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CV</title>
-	<link rel="stylesheet" href="./styles/index.css">
+	<link rel="stylesheet" href="./styles/index.scss">
 </head>
 
 <body>
 	<header class="header">
-		<div class="wrap">
-			<nav class="header__nav">
-				<a href="#">Home</a>
-				<a href="#">About me</a>
-				<a href="#">Skills</a>
-				<a href="#">Portfolio</a>
-				<a href="#">Contacts</a>
-			</nav>
+		<div class="container">
+			<div class="header__wrap">
+				<nav class="header__wrap-nav">
+					<a href="#">Home</a>
+					<a href="#">About me</a>
+					<a href="#">Skills</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Contacts</a>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<main class="main-content">
@@ -27,15 +29,15 @@
 				<ul class="preview__desc">
 					<li>Daniil Nilov</li>
 					<li>Frontend developer 29 years old, Minsk</li>
-					<li class="lang__select">
+					<li>
 						<a href="#">Ru</a>
 						<span> | </span>
 						<a href="#">Eng</a>
 					</li>
 				</ul>
+				<div class="preview-pic">
+				</div>
 			</div>
-		</section>
-		<section class="preview-pic">
 		</section>
 
 		<section class="about-me">
@@ -55,7 +57,7 @@
 		<section class="skills">
 			<div class="container">
 				<h2>Skills</h2>
-				<p class="work-programs">I work in such programs as</p>
+				<p>I work in such programs as</p>
 				<div class="skills__programs">
 					<div class="programs__info">
 						<img class="row1" src="./assets/images/ps.jpg" alt="Adobe Photoshop">
