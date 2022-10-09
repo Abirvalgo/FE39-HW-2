@@ -10,10 +10,15 @@ $black:#070707;
 $white:#F6F6F6;
 
 
-
 @media screen and (min-width: 769px) and (max-width: 1024px){
 	body .container{
 		width: 90%;
+	}
+}
+@media screen and (max-width: 768px) and (min-width:540px){
+	body .skills .container .skills__programs{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 }
 @media screen and (max-width: 768px){
@@ -60,27 +65,24 @@ body section.skills .container .skills__programs{
 :root section.skills .container>p {
 padding: 5% 0 5% 0;
 }
+:root body section.skills .container .skills__programs .row2{
+	padding-bottom: 5px;
+}
+:root body section.skills .container .skills__programs .row1{
+	padding-top: 20px;
+}
 
 }
-@media screen and (max-width: 830px) and (min-width: 540px) {
-	body .programs__info{
-		margin: 7%;
-	}
-}
+
 @media screen and (max-width: 540px){
 .send-msg__button{
 	width: 60%;
 	text-align: center;
 }
-body .row1{
-	padding-top: 40px;
-}
-body .row2{
-	padding-bottom: 5px;
-}
-body .programs__info{
+
+/*body .programs__info{
 	margin: 2%;
-}
+}*/
 }
 @media (min-width:200px) and (max-width: 730px) {
 	body .portfolio a{
@@ -243,9 +245,13 @@ body {
 	letter-spacing: 0em;
 	}
 	.skills__programs{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+		justify-items: stretch;
+		align-items: stretch;
+		row-gap: 1em;
+		padding-top: 5%;
 		padding-bottom: 110px;
 		.row1{
 			display: block;
